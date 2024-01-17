@@ -26,12 +26,13 @@ export const Input: React.FC<Props> = ({
 }) => {
   return (
     <div className={classes.inputWrap}>
-      <label htmlFor="name" className={classes.label}>
+      <label htmlFor={name} className={classes.label}>
         {label}
         {required ? <span className={classes.asterisk}>&nbsp;*</span> : ''}
       </label>
       <input
         className={[classes.input, error && classes.error].filter(Boolean).join(' ')}
+        id={name}
         {...{ type }}
         {...register(name, {
           required,

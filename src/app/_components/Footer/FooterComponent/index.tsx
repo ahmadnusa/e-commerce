@@ -22,8 +22,8 @@ export default function FooterComponent({ footer }: { footer: Footer }) {
               <Image
                 src={inclusion.icon}
                 alt={inclusion.title}
-                width={36}
-                height={36}
+                width={36.1}
+                height={36.1}
                 className={classes.icon}
               />
               <h5 className={classes.title}>{inclusion.title}</h5>
