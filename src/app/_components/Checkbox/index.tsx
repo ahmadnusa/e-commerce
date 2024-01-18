@@ -20,6 +20,8 @@ export function Checkbox({ label, value, isSelected, onClickHandler }: CheckboxP
   return (
     <label className={classes.checkboxWrapper}>
       <input
+        id={label}
+        name={label}
         type="checkbox"
         checked={isChecked}
         onChange={handleCheckboxChange}
