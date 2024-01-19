@@ -82,11 +82,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 60px;
+  gap: 32px;
 
   @include small-break {
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
+    margin-top: 32px;
   }
 }
